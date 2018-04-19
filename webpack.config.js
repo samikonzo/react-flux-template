@@ -10,6 +10,15 @@ const rules = {
 		exclude : ['/node_modules/', 'public']
 	},
 
+	less : {
+		test 	: /\.less$/,
+		use 	: [
+			'style-loader',
+			'css-loader',
+			'less-loader'
+		],
+		exclude : ['/node_modules/', 'public']
+	},
 	/*js : {
 		test 	: /\.js$/,
 		loader 	: 'babel-loader',
@@ -25,15 +34,7 @@ const rules = {
 		exclude : ['/node_modules/', 'public']
 	},
 
-	less : {
-		test 	: /\.less$/,
-		use 	: [
-			'style-loader',
-			'css-loader',
-			'less-loader'
-		],
-		exclude : ['/node_modules/', 'public']
-	},*/
+	*/
 }
 
 
