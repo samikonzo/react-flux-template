@@ -1,8 +1,10 @@
 import Dispatcher from '../dispatcher/AppDispatcher.js'
 import Constants from '../constants/AppConstants.js'
 import api from '../api/api.js'
+import DispatcherFix from './DispatcherFix.js'
 
-const AppActions ={
+const AppActions = {
+
 	/*
 		actionName(){
 			Dispatcher.dispatch({
@@ -22,5 +24,16 @@ const AppActions ={
 		}
 	*/
 }
+
+
+
+/**
+*	Dispatchers multiRequest issue fix
+*/
+
+DispatcherFix(AppActions)
+
+//////////////////////////////////////
+
 
 export default AppActions
