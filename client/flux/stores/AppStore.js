@@ -3,7 +3,7 @@ import Constants from '../constants/AppConstants.js'
 import { EventEmitter } from 'events'
 
 
-const EVENTS = {
+const Events = {
 	'CHANGE_STATE' : 'CHANGE_STATE'
 }
 
