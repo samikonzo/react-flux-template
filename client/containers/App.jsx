@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
 import AppActions from '../flux/actions/AppActions.js'
-/*import AppStore from '../flux/stores/AppStore.js'*/
+import AppStore from '../flux/stores/AppStore.js'
 
 
 class App extends React.Component{
@@ -27,7 +27,7 @@ class App extends React.Component{
 			<div> 
 				App.jsx
 
-				<Switch> 
+				{/*<Switch> 
 					<Route exact path='/' component={Home} />
 					<Route path='/contacts' component={Contacts} />
 					<Route path='/page' component={Page} />
@@ -39,7 +39,7 @@ class App extends React.Component{
 
 				{!this.state._historyObj && (
 					<Link to='/' ref={elem => {this._historyObjGrabber(elem)}}/>
-				)}
+				)}*/}
 			</div>
 		)
 	}

@@ -19,6 +19,7 @@ const rules = {
 		],
 		exclude : ['/node_modules/', 'public']
 	},
+	
 	/*js : {
 		test 	: /\.js$/,
 		loader 	: 'babel-loader',
@@ -47,7 +48,7 @@ module.exports = {
 		filename: 'script.js'
 	},
 	module: {
-		rules: [rules.jsx]
+		rules: [rules.jsx, rules.less]
 	},
 	devServer : {
 		//historyApiFallback	: true,
